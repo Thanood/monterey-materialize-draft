@@ -1,0 +1,19 @@
+<template>
+  <require from="materialize-css/css/materialize.css"></require>
+  <require from="./styles.css"></require>
+  <require from="./side-nav.html"></require>
+  <md-colors md-primary-color="#70519E" md-accent-color="#EE6085"></md-colors>
+  <!-- <md-colors md-primary-color="#EE6085" md-accent-color="#70519E"></md-colors> -->
+  <header>
+    <side-nav></side-nav>
+  </header>
+  <main>
+    <h5 class="accent-text">Monterey-Cli</h5>
+    <hr />
+    <md-card repeat.for="tile of tiles" md-title.bind="tile.title" class="tile-card">
+      <div class="center">
+        <img src.bind="tile.icon" style="height: 64px;" />
+      </div>
+    </md-card>
+  </main>
+</template>

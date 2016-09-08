@@ -1,0 +1,27 @@
+<template bindable="router">
+  <md-sidenav view-model.ref="sideNav" md-fixed="true">
+    <div>
+      <h4 class="primary-text center">Monterey</h4>
+    </div>
+    <div class="center">
+      <button md-button><i class="material-icons">add</i></button>
+      <button md-button><i class="material-icons">create</i></button>
+      <button md-button><i class="material-icons">remove</i></button>
+    </div>
+    <div style="margin-top: 15px; padding: 0 12px;">
+      <md-input md-label="search projects"></md-input>
+      <md-collection>
+        <md-collection-item class="accent-text">aurelia-materialize-bridge</md-collection-item>
+        <md-collection-item class="accent-text active">Monterey-Cli</md-collection-item>
+        <md-collection-item class="accent-text">v-grid</md-collection-item>
+        <md-collection-item class="accent-text">Monterey</md-collection-item>
+      </md-collection>
+    </div>
+    <!-- <ul>
+      <li md-waves><a>About</a></li>
+      <li md-waves><a>Installation</a></li>
+      <li md-waves><a>Project Status</a></li>
+      <li md-waves><a>Help/Docs</a></li>
+    </ul> -->
+  </md-sidenav>
+</template>
